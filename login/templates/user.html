@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}        
+<ul>
+            <li>{{ user.id, user.name, user.email, user.profile.photo }}</li>
+        </ul>
+       <button><a href="{{ url_for('delete', id=user.id
+        ) }}">Deletar</a></button> 
+{% endblock %}        
